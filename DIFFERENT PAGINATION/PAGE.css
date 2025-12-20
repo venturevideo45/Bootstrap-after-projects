@@ -1,0 +1,30 @@
+.pagination {
+  list-style: none; /* Removes bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Arranges items in a row */
+  justify-content: center; /* Centers the pagination component */
+}
+
+.pagination li {
+  margin: 0 5px; /* Adds space between page numbers */
+}
+
+.pagination a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none; /* Removes underlines from links */
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px; /* Optional: for rounded buttons */
+}
+
+.pagination a:hover {
+  background-color: #f1f1f1;
+}
+
+.pagination a[aria-current="page"] {
+  background-color: #4CAF50; /* Styles the active page */
+  color: white;
+  border: 1px solid #4CAF50;
+}
